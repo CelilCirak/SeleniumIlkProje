@@ -14,7 +14,7 @@ public class Day01IlkDers {
         //driverimiza google.com'a gitmesini soyledik.
         webDriver.get("http://google.com");
 
-       webDriver.close();
+        webDriver.close();
 
         webDriver.quit();
 

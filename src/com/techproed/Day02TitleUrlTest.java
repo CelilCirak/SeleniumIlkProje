@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Day02TitleUrlTest {
 
     // Youtube.com'a gidelim.
-    // Title, video kelimesini iceriyormu?
+    // Title, 'video' kelimesini iceriyormu?
     // driveri kapatalim.
 
     public static void main(String[] args) {
