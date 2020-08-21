@@ -1,10 +1,14 @@
 package com.techproed;
 
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import java.util.concurrent.TimeUnit;
 
-public class Day04LocatorTagName {
+public class Day05Xpath02 {
+
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "/Users/cc/Documents/selenium libraries/drivers/chromedriver");
 
@@ -13,8 +17,12 @@ public class Day04LocatorTagName {
         driver.manage().window().maximize();
         driver.get("http://a.testaddressbook.com/");
 
-        //getText ile asagida "home'daki" gizli kodu goruyoruz.
-        WebElement homeLinki = driver.findElement(By.tagName("a"));//home
-        System.out.println(homeLinki.getText());
+        WebElement wcYazisi = driver.findElement(By.xpath("//h1"));
+        System.out.println(wcYazisi.getText());
+
+
+
+
+
     }
 }
