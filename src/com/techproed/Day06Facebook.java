@@ -1,9 +1,6 @@
 package com.techproed;
 
-import com.sun.source.tree.TryTree;
-import com.sun.tools.javap.TryBlockWriter;
-import jdk.internal.org.objectweb.asm.commons.TryCatchBlockSorter;
-import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -36,7 +33,6 @@ public class Day06Facebook {
 
         //Burada Java ya 3 saniye bekle diyoruz.
         try {
-
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -50,8 +46,12 @@ public class Day06Facebook {
         } else {
             System.out.println("Giris Basarili !");
         }
+       try {
+           Thread.sleep(5000);
+       }catch (InterruptedException e){
+           e.printStackTrace();
 
-
+        }
 
         driver.quit();
     }
